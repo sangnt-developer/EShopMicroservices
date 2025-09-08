@@ -14,7 +14,7 @@ builder.Services.AddMediatR(config =>
 
 builder.Services.AddValidatorsFromAssembly(assembly);
 
-builder.Services.AddCarter(new DependencyContextAssemblyCatalog([typeof(Program).Assembly]));
+builder.Services.AddCarter(new DependencyContextAssemblyCatalog([assembly]));
 
 builder.Services.AddMarten(opts =>
 {
